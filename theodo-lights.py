@@ -27,4 +27,4 @@ def switch(light_id, state):
     return json.dumps({'id': light_id, 'state': state})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
